@@ -6,6 +6,7 @@ defineProps<{
   buttonText?: string;
   buttonLink?: string;
   image?: string;
+  entry: any;
 }>();
 </script>
 
@@ -28,6 +29,8 @@ defineProps<{
           >
             {{ buttonText }}
           </NuxtLink>
+
+          <pre>{{ entry }}</pre>
         </div>
         <div class="w-full md:w-3/5 py-6 text-center">
           <img
